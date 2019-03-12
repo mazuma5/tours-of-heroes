@@ -21,11 +21,11 @@ pipeline {
       }
     }
      
-    stage('Test') {
+ /*   stage('Test') {
       steps {
          sh 'npm test'
       }
-    }
+    }*/
     stage('Building Image'){
       steps{
         script{
