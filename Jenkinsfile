@@ -55,7 +55,7 @@ pipeline {
     }
     stage('Run Container'){
       steps{
-        sh 'docker run --name=node-app -d -p 3000:3000 $registry:$BUILD_NUMBER &'
+        sh 'docker run --name=pwa-app -d -p 3000:3000 $registry:$BUILD_NUMBER &'
       }
     }
   }
